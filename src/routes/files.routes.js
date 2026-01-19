@@ -7,7 +7,7 @@ const controller = require('../controllers/files.controller');
 const router = express.Router();
 
 const storage = multer.diskStorage({
-  destination: path.join(__dirname, '../uploads'),
+  destination: path.join(__dirname, '../../Public/uploads/'),
   filename: (req, file, cb) => {
     cb(null, Date.now() + '-' + file.originalname);
   }

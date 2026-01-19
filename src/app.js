@@ -2,9 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-const usersRoutes = require('./routes/users.routes');
+const usersRoutes = require('./routes/users.routes.js');
 const postsRoutes = require('./routes/posts.routes');
-const filesRoutes = require('./routes/files.routes');
+const filesRoutes = require('./routes/files.routes.js');
 const errorHandler = require('./middleware/error.middleware');
 
 app.use(express.json());
